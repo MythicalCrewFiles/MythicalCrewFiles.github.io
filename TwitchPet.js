@@ -133,7 +133,7 @@ const TwitchPet = ({ customAppearance, chatCommands, twitchEvents }) => {
         className="relative p-4 rounded-full shadow-lg"
       >
         <motion.img
-          src={customAppearance.image || "default-pet.png"}
+          src={customAppearance.image || "https://github.com/MythicalCrewFiles/MythicalCrewFiles.github.io/blob/main/Broly.png?raw=true"}
           alt="Twitch Pet"
           className="w-16 h-16 object-contain"
         />
