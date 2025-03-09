@@ -19,7 +19,17 @@
     <div id="twitch-pet"></div>
 
     <!-- ✅ Load TwitchPet.js -->
-    <script src="https://mythicalcrewfiles.github.io/TwitchPet.js" type="text/javascript"></script>
+    <script type="module">
+    import TwitchPet from "https://mythicalcrewfiles.github.io/TwitchPet.js";
+
+    ReactDOM.render(
+        React.createElement(TwitchPet, {
+            customAppearance: { image: "https://raw.githubusercontent.com/MythicalCrewFiles/MythicalCrewFiles.github.io/main/Broly.png" }
+        }),
+        document.getElementById("twitch-pet")
+    );
+</script>
+
 
     <script type="text/babel">
         // Ensure that TwitchPet is defined before rendering
