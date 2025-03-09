@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/twitch-pet/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/twitch-pet/static/js/main.727c656b.chunk.js",
+    "main.js.map": "/twitch-pet/static/js/main.727c656b.chunk.js.map",
+    "runtime-main.js": "/twitch-pet/static/js/runtime-main.243848ae.js",
+    "runtime-main.js.map": "/twitch-pet/static/js/runtime-main.243848ae.js.map",
+    "static/js/2.1593b377.chunk.js": "/twitch-pet/static/js/2.1593b377.chunk.js",
+    "static/js/2.1593b377.chunk.js.map": "/twitch-pet/static/js/2.1593b377.chunk.js.map",
+    "static/js/3.4320840f.chunk.js": "/twitch-pet/static/js/3.4320840f.chunk.js",
+    "static/js/3.4320840f.chunk.js.map": "/twitch-pet/static/js/3.4320840f.chunk.js.map",
+    "index.html": "/twitch-pet/index.html",
+    "precache-manifest.4e8817d7d2b670e69915929afb2b98ff.js": "/twitch-pet/precache-manifest.4e8817d7d2b670e69915929afb2b98ff.js",
+    "service-worker.js": "/twitch-pet/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/twitch-pet/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.1593b377.chunk.js.LICENSE.txt": "/twitch-pet/static/js/2.1593b377.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.243848ae.js",
+    "static/js/2.1593b377.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.727c656b.chunk.js"
+  ]
+}
