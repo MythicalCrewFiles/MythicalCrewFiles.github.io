@@ -134,7 +134,7 @@ const TwitchPet = ({ customAppearance, chatCommands, twitchEvents }) => {
             mood === "dancing" ? "dancing-pet.png" :
             mood === "waving" ? "waving-pet.png" :
             mood === "eating" ? "eating-pet-sitting.png" :
-            "default-pet.png")
+            "https://www.canva.com/design/DAGhMQAhFJM/L0iFherPYJ_VNQ9-IAOqMA/view?utm_content=DAGhMQAhFJM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7fcae90ef2")
           }
           alt="Twitch Pet"
           className="w-16 h-16 object-contain"
