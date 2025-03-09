@@ -126,7 +126,7 @@ const TwitchPet = ({ customAppearance, chatCommands, twitchEvents }) => {
       >
         <motion.img
           src={
-            customAppearance.image || "https://preview.redd.it/this-needs-to-become-an-outfit-skin-for-dbs-broly-to-also-v0-6b9pvdxaicud1.png?width=602&format=png&auto=webp&s=38fa993b1243c428f5ede29b449d48fcba9289d3" ||
+            customAppearance.image || "https://preview.redd.it/this-needs-to-become-an-outfit-skin-for-dbs-broly-to-also-v0-6b9pvdxaicud1.png" ||
             (mood === "powered" ? "powered-pet.png" :
             mood === "attacking" ? "attacking-pet.png" :
             mood === "okay" ? "okay-pet.png" :
