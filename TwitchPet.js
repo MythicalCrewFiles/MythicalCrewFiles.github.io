@@ -120,22 +120,20 @@ const TwitchPet = ({ customAppearance, chatCommands, twitchEvents }) => {
   return (
     <div className="fixed bottom-10 right-10 flex flex-col items-center">
       <motion.div
-        animate={{ x: position.x, y: position.y }}
-        transition={{ type: "spring", stiffness: 100 }}
+        animate={{
+          x: position.x, 
+          y: position.y,
+          scale: mood === "powered" ? [1, 1.2, 1] : 1,
+          rotate: mood === "dancing" ? [0, 10, -10, 0] : 0,
+          opacity: mood === "eating" ? [1, 0.8, 1] : 1,
+          y: mood === "sleeping" ? [0, 5, 0] : 0,
+          x: mood === "waving" ? [0, 5, 0] : 0,
+        }}
+        transition={{ duration: 1, repeat: mood === "dancing" ? Infinity : 0 }}
         className="relative p-4 rounded-full shadow-lg"
       >
         <motion.img
-          src={
-            customAppearance.image || "https://github.com/MythicalCrewFiles/MythicalCrewFiles.github.io/blob/main/Broly.png?raw=true" ||
-            (mood === "powered" ? "powered-pet.png" :
-            mood === "attacking" ? "attacking-pet.png" :
-            mood === "okay" ? "okay-pet.png" :
-            mood === "sleeping" ? "sleeping-pet.png" :
-            mood === "dancing" ? "dancing-pet.png" :
-            mood === "waving" ? "waving-pet.png" :
-            mood === "eating" ? "eating-pet-sitting.png" :
-            "https://github.com/MythicalCrewFiles/MythicalCrewFiles.github.io/blob/main/Broly.png?raw=true")
-          }
+          src={customAppearance.image || "default-pet.png"}
           alt="Twitch Pet"
           className="w-16 h-16 object-contain"
         />
@@ -145,3 +143,4 @@ const TwitchPet = ({ customAppearance, chatCommands, twitchEvents }) => {
 };
 
 export default TwitchPet;
+
