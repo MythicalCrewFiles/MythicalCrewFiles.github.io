@@ -9,20 +9,31 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://unpkg.com/framer-motion/dist/framer-motion.min.js"></script>
     <style>
-        body { background: transparent; overflow: hidden; }
+        body {
+            background: transparent;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
     <div id="twitch-pet"></div>
 
-    <!-- ✅ Load your TwitchPet.js file correctly -->
+    <!-- ✅ Load TwitchPet.js -->
     <script src="https://mythicalcrewfiles.github.io/TwitchPet.js" type="text/javascript"></script>
 
     <script type="text/babel">
-        ReactDOM.render(
-            React.createElement(TwitchPet, { customAppearance: { image: "https://github.com/MythicalCrewFiles/MythicalCrewFiles.github.io/blob/main/Broly.png?raw=true" } }),
-            document.getElementById("twitch-pet")
-        );
+        // Ensure that TwitchPet is defined before rendering
+        if (typeof TwitchPet !== "undefined") {
+            ReactDOM.render(
+                React.createElement(TwitchPet, {
+                    customAppearance: { image: "https://mythicalcrewfiles.github.io/ --" }
+                }),
+                document.getElementById("twitch-pet")
+            );
+        } else {
+            console.error("TwitchPet is not defined. Ensure TwitchPet.js is correctly loaded.");
+        }
     </script>
 </body>
 </html>
+
