@@ -7,7 +7,6 @@ const TwitchPet = ({ customAppearance, chatCommands, twitchEvents }) => {
   const [mood, setMood] = useState("happy");
   const [animation, setAnimation] = useState("idle");
   const [powerUp, setPowerUp] = useState(false);
-  const [kiBlast, setKiBlast] = useState(false);
   const [fullKiBlast, setFullKiBlast] = useState(false);
   const [okaySign, setOkaySign] = useState(false);
   const [sleeping, setSleeping] = useState(false);
@@ -34,7 +33,7 @@ const TwitchPet = ({ customAppearance, chatCommands, twitchEvents }) => {
 
   useEffect(() => {
     if (!twitchEvents) return;
-    
+
     const triggerPowerUp = () => {
       setPowerUp(true);
       setMood("powered");
@@ -97,25 +96,37 @@ const TwitchPet = ({ customAppearance, chatCommands, twitchEvents }) => {
     twitchEvents.on("cheer", triggerBitsReaction);
     twitchEvents.on("first_time_chat", triggerFirstTimeChat);
     twitchEvents.on("raid", triggerRaidReaction);
+
+    return () => {
+      twitchEvents.off("follow", triggerPowerUp);
+      twitchEvents.off("subscription", triggerSubscriptionReaction);
+      twitchEvents.off("cheer", triggerBitsReaction);
+      twitchEvents.off("first_time_chat", triggerFirstTimeChat);
+      twitchEvents.off("raid", triggerRaidReaction);
+    };
   }, [twitchEvents]);
 
-  chatCommands["!sleep"] = () => {
-    setSleeping(true);
-    setMood("sleeping");
-    setTimeout(() => {
-      setSleeping(false);
-      setMood("happy");
-    }, 5000);
-  };
+  useEffect(() => {
+    if (!chatCommands) return;
 
-  chatCommands["!snack"] = () => {
-    setEating(true);
-    setMood("eating");
-    setTimeout(() => {
-      setEating(false);
-      setMood("happy");
-    }, 3000);
-  };
+    chatCommands["!sleep"] = () => {
+      setSleeping(true);
+      setMood("sleeping");
+      setTimeout(() => {
+        setSleeping(false);
+        setMood("happy");
+      }, 5000);
+    };
+
+    chatCommands["!snack"] = () => {
+      setEating(true);
+      setMood("eating");
+      setTimeout(() => {
+        setEating(false);
+        setMood("happy");
+      }, 3000);
+    };
+  }, [chatCommands]);
 
   return (
     <div className="fixed bottom-10 right-10 flex flex-col items-center">
@@ -133,11 +144,7 @@ const TwitchPet = ({ customAppearance, chatCommands, twitchEvents }) => {
         className="relative p-4 rounded-full shadow-lg"
       >
         <motion.img
-  src={customAppearance.image || "https://github.com/MythicalCrewFiles/MythicalCrewFiles.github.io/blob/main/Broly.png?raw=true"}
-  alt="Twitch Pet"
-  className="w-16 h-16 object-contain"
-/>
-
+          src={customAppearance.image || "https://github.com/MythicalCrewFiles/MythicalCrewFiles.github.io/blob/main/Broly.png?raw=true"}
           alt="Twitch Pet"
           className="w-16 h-16 object-contain"
         />
