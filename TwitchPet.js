@@ -126,7 +126,7 @@ const TwitchPet = ({ customAppearance, chatCommands, twitchEvents }) => {
       >
         <motion.img
           src={
-            customAppearance.image || "Broly.png" ||
+            customAppearance.image || "https://github.com/MythicalCrewFiles/MythicalCrewFiles.github.io/blob/main/Broly.png?raw=true" ||
             (mood === "powered" ? "powered-pet.png" :
             mood === "attacking" ? "attacking-pet.png" :
             mood === "okay" ? "okay-pet.png" :
@@ -134,7 +134,7 @@ const TwitchPet = ({ customAppearance, chatCommands, twitchEvents }) => {
             mood === "dancing" ? "dancing-pet.png" :
             mood === "waving" ? "waving-pet.png" :
             mood === "eating" ? "eating-pet-sitting.png" :
-            "Broly.png")
+            "https://github.com/MythicalCrewFiles/MythicalCrewFiles.github.io/blob/main/Broly.png?raw=true")
           }
           alt="Twitch Pet"
           className="w-16 h-16 object-contain"
