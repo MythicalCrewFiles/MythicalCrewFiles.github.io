@@ -15,11 +15,14 @@
 <body>
     <div id="twitch-pet"></div>
 
+    <!-- ✅ Load your TwitchPet.js file correctly -->
+    <script src="https://mythicalcrewfiles.github.io/TwitchPet.js" type="text/javascript"></script>
+
     <script type="text/babel">
-        // Import your TwitchPet component
-        import TwitchPet from "MythicalCrewFiles.github.io
-/TwitchPet.js";
-        ReactDOM.render(<TwitchPet customAppearance={{ image: "default-pet.png" }} />, document.getElementById("twitch-pet"));
+        ReactDOM.render(
+            React.createElement(TwitchPet, { customAppearance: { image: "" } }),
+            document.getElementById("twitch-pet")
+        );
     </script>
 </body>
 </html>
