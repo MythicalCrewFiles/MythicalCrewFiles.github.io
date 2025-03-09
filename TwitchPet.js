@@ -126,7 +126,7 @@ const TwitchPet = ({ customAppearance, chatCommands, twitchEvents }) => {
       >
         <motion.img
           src={
-            customAppearance.image || "https://www.canva.com/design/DAGhMQAhFJM/L0iFherPYJ_VNQ9-IAOqMA/view?utm_content=DAGhMQAhFJM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7fcae90ef2" ||
+            customAppearance.image || "Broly.png" ||
             (mood === "powered" ? "powered-pet.png" :
             mood === "attacking" ? "attacking-pet.png" :
             mood === "okay" ? "okay-pet.png" :
@@ -134,7 +134,7 @@ const TwitchPet = ({ customAppearance, chatCommands, twitchEvents }) => {
             mood === "dancing" ? "dancing-pet.png" :
             mood === "waving" ? "waving-pet.png" :
             mood === "eating" ? "eating-pet-sitting.png" :
-            "https://www.canva.com/design/DAGhMQAhFJM/L0iFherPYJ_VNQ9-IAOqMA/view?utm_content=DAGhMQAhFJM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7fcae90ef2")
+            "Broly.png")
           }
           alt="Twitch Pet"
           className="w-16 h-16 object-contain"
