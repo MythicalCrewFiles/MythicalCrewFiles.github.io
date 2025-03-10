@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/twitch-pet/static/css/main.e6c13ad2.css",
-    "main.js": "/twitch-pet/static/js/main.226bb55c.js",
-    "static/js/488.365923c1.chunk.js": "/twitch-pet/static/js/488.365923c1.chunk.js",
+    "main.css": "/twitch-pet/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/twitch-pet/static/js/main.939fc964.chunk.js",
+    "main.js.map": "/twitch-pet/static/js/main.939fc964.chunk.js.map",
+    "runtime~main.js": "/twitch-pet/static/js/runtime~main.f179967c.js",
+    "runtime~main.js.map": "/twitch-pet/static/js/runtime~main.f179967c.js.map",
+    "static/js/2.ae026ab9.chunk.js": "/twitch-pet/static/js/2.ae026ab9.chunk.js",
+    "static/js/2.ae026ab9.chunk.js.map": "/twitch-pet/static/js/2.ae026ab9.chunk.js.map",
+    "static/js/3.6757c1ca.chunk.js": "/twitch-pet/static/js/3.6757c1ca.chunk.js",
+    "static/js/3.6757c1ca.chunk.js.map": "/twitch-pet/static/js/3.6757c1ca.chunk.js.map",
     "index.html": "/twitch-pet/index.html",
-    "main.e6c13ad2.css.map": "/twitch-pet/static/css/main.e6c13ad2.css.map",
-    "main.226bb55c.js.map": "/twitch-pet/static/js/main.226bb55c.js.map",
-    "488.365923c1.chunk.js.map": "/twitch-pet/static/js/488.365923c1.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.226bb55c.js"
-  ]
+    "precache-manifest.1350ec8930b604fccb9e8253594c1606.js": "/twitch-pet/precache-manifest.1350ec8930b604fccb9e8253594c1606.js",
+    "service-worker.js": "/twitch-pet/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/twitch-pet/static/css/main.5ecd60fb.chunk.css.map"
+  }
 }
