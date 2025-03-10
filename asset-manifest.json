@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/twitch-pet/static/css/main.e6c13ad2.css",
+    "main.js": "/twitch-pet/static/js/main.226bb55c.js",
+    "static/js/488.365923c1.chunk.js": "/twitch-pet/static/js/488.365923c1.chunk.js",
+    "index.html": "/twitch-pet/index.html",
+    "main.e6c13ad2.css.map": "/twitch-pet/static/css/main.e6c13ad2.css.map",
+    "main.226bb55c.js.map": "/twitch-pet/static/js/main.226bb55c.js.map",
+    "488.365923c1.chunk.js.map": "/twitch-pet/static/js/488.365923c1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.226bb55c.js"
+  ]
+}
